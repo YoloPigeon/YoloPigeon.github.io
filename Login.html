@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Free Range Robotics</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+	  <!-- Login Scripts -->
+<style> 
+	 :root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+body {
+  background: #9CECFB;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, lightblue, white, lightblue);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-signin {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-signin .card-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.card-signin .card-img-left {
+  width: 45%;
+  /* Link to your background image using in the property below! */
+  background: scroll center url('https://source.unsplash.com/WEQbe2jBg40/414x512');
+  background-size: cover;
+}
+
+.card-signin .card-body {
+  padding: 2rem;
+}
+
+.form-signin {
+  width: 100%;
+}
+
+.form-signin .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group input {
+  border-radius: 2rem;
+}
+
+.form-label-group>input,
+.form-label-group>label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+.btn-google {
+  color: white;
+  background-color: #ea4335;
+}
+
+.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+}
+	  
+	
+	#error-text {
+	color:red;
+	font-size:9pt;
+		text-align: center;
+		
+		
+	}
+	  </style>
+	    <script>
+			
+	// detect enter keypress
+$(document).keypress(function(e) {
+    var keycode = (e.keyCode ? e.keyCode : e.which);
+    if (keycode == '13') {
+      validate();
+    }
+});
+// Note: Like all Javascript password scripts, this is hopelessly insecure as the user can see 
+//the valid usernames/passwords and the redirect url simply with View Source.  
+// And the user can obtain another three tries simply by refreshing the page.  
+//So do not use for anything serious!
+
+var count = 2;
+function validate() {
+var un = document.myform.username.value;
+var pw = document.myform.pword.value;
+var valid = false;
+
+var unArray = ["flyingnerd123@gmail.com", "etdood@gmail.com"];  // as many as you like - no comma after final entry
+var pwArray = ["joseph", "ethan"];  // the corresponding passwords;
+
+for (var i=0; i <unArray.length; i++) {
+if ((un == unArray[i]) && (pw == pwArray[i])) {
+valid = true;
+break;
+}
+}
+
+if (valid) {
+//alert ("Login was successful");
+window.location = "teampage.html";
+	document.getElementById("error-text").innerHTML = "";
+return false;
+}
+else {
+document.getElementById("error-text").innerHTML = "Incorrect Username or Password";
+return false;
+}
+
+}
+
+			</script>
+	  <!-- Login Scripts End -->
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container"><p><a href="/index.html"><img src="img/LogoMainEDIT1.png" alt="" width="93" height="69" class="rounded img-fluid" align="left"></a></p>
+<h4> <a href="index.html" target="_self" class="navbar-brand js-scroll-trigger">Free Range Robotics</a><link rel="icon" href="favicon.png" sizes="16x16" type="image/png"><link rel="icon" href="favicon.png" sizes="16x16" type="image/png"><link rel="icon" href="favicon.png" sizes="16x16" type="image/png"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> </h4>
+		  
+<!-- old nav bar -->		  
+<!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+            </li>
+          
+            </li>
+          </ul> 
+        </div> -->
+<!-- old nav bar -->
+		  
+      </div>
+  </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Welcome</div>
+          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        </div>
+      </div>
+    </header>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+    <!-- login -->
+    <section id="login">
+      <div class="container">
+   <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+
+		  
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sign In</h5>
+            <form class="form-signin" name="myform">
+              <div class="form-label-group">
+				  
+                <input type="email" id="inputEmail" name="username" onKeyPress="doClick('submit',event)" class="form-control" placeholder="Email address" required autofocus>
+                <label for="inputEmail">Email address</label>
+				  
+				  
+              </div>
+
+              <div class="form-label-group">
+				  
+                <input type="password" id="inputPassword" name="pword" onKeyPress="doClick('submit',event)" class="form-control" placeholder="Password" required >
+                <label for="inputPassword">Password</label>
+				  
+				  
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Remember password</label>
+              </div>
+				<p id="error-text"></p>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button" value="Check In" id="submit" name="Submit" onclick= "validate()">Sign in</button>
+				
+              <hr class="my-4">
+
+				
+            </form>
+			  
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <!-- About -->
+    <!-- Team -->
+    <!-- Clients -->
+    <!-- Contact -->
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"><span class="copyright">&copy;FreeRangeRobotics 2018</span></div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,341 @@
+﻿Free Range Robotics Site Content
+Index.html
+Banner:
+Icon Image:
+  
+
+Carousel Image:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Awards:
+Award Photo 1:
+  
+
+
+
+
+
+
+
+Award Photo 2:
+  
+
+
+
+
+
+
+
+Award Photo 3:
+  
+
+
+
+
+
+
+
+Award Text & Title 1:
+Amaze Award
+The Award is given to a team that is All Round, Top Notch and has a Well Built Robot
+
+
+
+
+Tournament Champion & Title 2:
+Overall Competition Winner, Which is Given to the Team that Beats all the other Teams and Wins the Last Finals Match
+
+
+
+
+
+
+
+
+Excellence Award & Title 3:
+Given to the Team with the Best Logbook and Robot
+
+
+All Awards:
+
+
+2013 Kiwi Challenge Miniseason "Ramp It Up" Auckland Regional Champions
+
+
+2012/13 World Arts Division Tournament Champion
+2012/13 New Zealand National Tournament Finalists
+ 2012/13 New Zealand National Design Award
+ 2012/13 New Zealand National Build Award
+ 2012/13 Asia Pacific Tournament Champions 
+ 2012/13 Asia Pacific Create Award
+
+
+ 2012 Kiwi Challenge Miniseason "Lord of Da Rings" Auckland Regional Finalists
+
+
+ 2011/12 World Championship Engineering division Sportsmanship Award
+ 2011/12 New Zealand National Design Award
+ 2011/12 New Zealand National Tournament Finalists
+ 2011/12 Robot World Cup Tournament Champions 
+2011/12 Robot World Cup Tournament Finalists
+
+
+2010/11 World Engineering Division Think Award
+2010/11 World Engineering Division Tournament Champions
+ 2010/11 New Zealand National Excellence Award 
+2010/11 New Zealand National Tournament Champions x 2 
+2010/11 New Zealand National Programming Skills Champions 
+ 2010/11 New Zealand National Robot Skills Runner Up
+ 2010/11 New Zealand National Volunteer of the Year Award
+2010/11 New Zealand National Innovate Award
+ 2010/11 New Zealand Upper North Island Regional Tournament Champions
+2010/11 New Zealand Upper North Island Regional Tournament Finalists
+2010/11 New Zealand Upper North Island Robot Skills Champions
+2010/11 New Zealand Upper North Island Programming Champions
+ 
+2009/10 World Tournament Champions 
+2009/10 World Web Design Award
+2009/10 World Math Division Tournament Champions
+2009/10 World Engineering Division Tournament Semifinalists
+2009/10 World Energy Award Math Division
+2009/10 World Amaze Award Engineering Division
+2009/10 World Promote Award Finalist
+2009/10 New Zealand National Tournament Champions 
+2009/10 New Zealand National Think Award
+2009/10 New Zealand National Promote Award
+2009/10 New Zealand National Web Design Award
+2009/10 New Zealand National Programming Challenge Runner Up
+2009/10 New Zealand National Essay Award
+
+
+2008/09 World Programming Skills Champions 
+2008/09 World Robot Skills 3rd Place
+2008/09 World Technology Division Tournament Semifinalists
+2008/09 New Zealand Programming Skills Champions 
+2008/09 New Zealand Tournament Champions
+
+
+
+
+Our Robots:
+Big Cap Photo:
+  
+
+
+
+Big Cap Driver: Gabe
+
+
+
+
+
+
+
+
+
+
+Little Cap Photo:
+
+
+Little Cap Driver: Ethan (Link to Profile Here)
+
+
+
+
+
+
+
+
+2017 Robot 1 Photo:
+ Related image 
+
+2017 Robot 1 Driver:
+Ethan Dew (Link to Profile Here)
+
+
+2016 Robot 1 Photo:
+
+
+2016 Robot 1 Driver:
+
+
+2016 Robot 2 Photo:
+
+
+2016 Robot 2 Driver:
+
+
+About:
+Date 1: 2008-2014
+Title 1: The Beginning
+Text 1: We are a group of mostly homeschooled students in Auckland, New Zealand, who are enthusiastic about the fields of science, engineering, and robotics. We believe that in working as a team we can achieve great results.
+We have been competing in the VEX Robotics Competition since it first came to New Zealand in 2008. In our first year, we were the World Programming Skills Champions, and then the following year we were World Tournament Champions. Back over here, we have been National Tournament Champions four times, National Design Award Champions twice, and we have also been National Excellence Award winners, the greatest award presented at a competition.  Each year we have qualified and been fortunate enough to travel to America to compete in the World Championships up till 2014 
+We work as a team to develop multiple robots and we believe this is the key to success.
+
+
+IMG 1:
+  
+
+
+
+
+
+Date 2: 
+Title 2: 
+Text 2:
+IMG 2:
+
+
+Date 3: 
+Title 3: 
+Text 3:
+IMG 3:
+
+
+Date 4: 
+Title 4: 
+Text 4:
+IMG 4:
+Our Team
+Photo: 
+Title: Ethan Dew  
+ Role: Team Leader & Little Cap Driver
+Social Links 1:
+Social Links 2:
+Social Links 3:
+
+
+Photo:
+  
+
+Title: Gabriel Wheeler
+Role: Big Cap Driver 2921F
+Social Links 1:
+Social Links 2:
+Social Links 3:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Photo:
+   
+Title: Joseph Greening
+Role: Custom Parts Designer, Website Designer, Video Editor 2921R
+Social Links 1: Skypixel.com/user/agreening
+Social Links 2: josephgreening.myportfolio.com
+Social Links 3: littlebeartechnolo.wixsite.com/home
+
+
+Photo: 
+Title: Hana Morrow
+Role: Drive & Design Assistant 2921R
+Social Links 1:
+Social Links 2:
+Social Links 3:
+
+
+Photo: 
+Title: Ishua Morrow
+Role: Design Assistant
+Social Links 1:
+Social Links 2:
+Social Links 3:
+
+
+Photo: 
+Title: Shaun Cole-Baker
+Role: Programmer and Scouting
+Social Links 1:
+Social Links 2:
+Social Links 3:
+
+
+Photo: 
+Title: Christian Witt
+Role: Programmer
+Social Links 1:
+Social Links 2:
+Social Links 3:
+Sponsors 
+Sponsor Photo 1:
+
+
+
+
+Sponsor Photo 2:
+
+
+
+
+Sponsor Photo 3:
+
+
+
+
+Sponsor Photo 4:
+
+
+
+
+Team Login:
+Background Gradient: linear-gradient(to top, lightblue, white, lightblue);
+Team Page:
+Events Scrimmages & Meetings
+Project Description Title:
+
+
+Project Text:
+
+
+
+
+Project details:
+1.New Website
+2.V5
+3.Odometry all robots perfect
+4. Go to Worlds
+
+
+Team Events List:
+1.
+2.
+3.
+4.
+Terms of Use:
+Privacy Policy:
