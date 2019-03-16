@@ -30,7 +30,7 @@ break;
 
 if (valid) {
 //alert ("Login was successful");
-window.location = "teampage.html";
+window.location = "Teampage.html";
 	document.getElementById("error-text").innerHTML = "";
 return false;
 }
