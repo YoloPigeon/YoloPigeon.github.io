@@ -7,22 +7,10 @@ $(document).keypress(function(e) {
     document.getElementById("submit").click();
     }
 });
-
-var input = document.getElementById("inputPassword");
-
 // Execute a function when the user releases a key on the keyboard
-input.addEventListener("keyup", function(event) {
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    document.getElementById("submit").click();
-  }
-});
+
 // Note: Like all Javascript password scripts, this is hopelessly insecure as the user can see
 //the valid usernames/passwords and the redirect url simply with View Source.
-// And the user can obtain another three tries simply by refreshing the page.
 //So do not use for anything serious!
 
 function validate() {
