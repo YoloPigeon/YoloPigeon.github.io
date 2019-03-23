@@ -101,3 +101,8 @@ ul#horizontal-list {
 	ul#horizontal-list li {
 		display: inline;
 	}
+
+a.sponsor-scroll:hover {
+	text-decoration:underline;
+	color: #DCAB01;
+}
