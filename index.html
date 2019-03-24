@@ -77,16 +77,13 @@ h1, h2, h3, h4, h5, h6 {
   </div>
 </div>
 <script>
+	var TestingActive = false;
+	
 	let ONOFF = document.querySelector('.blinking');
 
 //console.log(ONOFF.classList);
 //console.log("© Joseph Greening")
 // Set the date we're counting down to
-	document.getElementById("countdown-text").innerHTML = "Count Down to Worlds";
-// Date Counting Down to:	
-var countDownDate = new Date("Apr 24, 2019 8:00:00").getTime();
-//test date: please set as current date
-//var countDownDate = new Date("Mar 25, 2019 8:00:00").getTime();
 	
 ONOFF.classList.remove('blinking');
 	
@@ -99,6 +96,17 @@ var CheckActive = false;
 // Update the count down every 1 second
 var x = setInterval(function() {
 if (!CheckActive) {
+	
+		if (TestingActive) {
+		//test date: please set as current date
+		document.getElementById("countdown-text").innerHTML = "Testing";
+var countDownDate = new Date("Mar 25, 2019 8:00:00").getTime();
+	} else {
+		document.getElementById("countdown-text").innerHTML = "Count Down to Worlds";
+// Date Counting Down to:	
+var countDownDate = new Date("Apr 24, 2019 8:00:00").getTime();
+	}
+	
   // Get todays date and time
   var now = new Date().getTime();
 //console.log("actual day");
