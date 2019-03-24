@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top mainnavcolor" id="mainNav">
-  <div class="container">
+  <div class="container <!--containertop-->">
     <p class="moveimage"><a href="index.html" target="_self"><img src="favicon_web.png" alt="" width="93" height="69" class="rounded img-fluid" align="left"  style="margin-top:4.5px"></a></p>
     <h4> <a href="#page-top" target="_self" class="navbar-brand js-scroll-trigger">Free Range Robotics</a>
       <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
         <li class="nav-item"> <a class="nav-link js-scroll-trigger btnbox" href="#about">About</a> </li>
         <li class="nav-item"> <a class="nav-link js-scroll-trigger btnbox" href="#team">Team</a> </li>
         <li class="nav-item"> <a class="nav-link js-scroll-trigger btnbox" href="#sponsors">Sponsors </a> </li>
+        <li class="nav-item"> <a class="nav-link js-scroll-trigger btnbox" href="#contact">Blog</a> </li>
         <li class="nav-item"> <a class="nav-link js-scroll-trigger btnbox" href="#contact">Contact</a> </li>
         <li class="nav-item"> <a class="nav-link js-scroll-trigger btnbox" href="/Photos.html">Photos</a> </li>
       </ul>
@@ -71,23 +72,41 @@ h1, h2, h3, h4, h5, h6 {
 <!-- Count Down Timer to Event-->
 <div class="row" style="margin-top:4.5px">
   <div class="col-lg-12 text-center">
-    <h2 class="section-heading text-uppercase" style="margin-top:15px">Count Down to Worlds</h2>
-    <h3 class="section-subheading text-muted" id="countdown" style="margin-top:6px"></h3>
+    <h2 class="section-heading text-uppercase" style="margin-top:15px" id="countdown-text"></h2>
+    <h3 class="section-subheading text-muted blinking" id="countdown" style="margin-top:6px"></h3>
   </div>
 </div>
 <script>
+	let ONOFF = document.querySelector('.blinking');
+
+console.log(ONOFF.classList);
+console.log("© Joseph Greening")
 // Set the date we're counting down to
-var countDownDate = new Date("Apr 23, 2019 8:00:00").getTime();
+	document.getElementById("countdown-text").innerHTML = "Count Down to Worlds";
+// Date Counting Down to:	
+//var countDownDate = new Date("Apr 24, 2019 8:00:00").getTime();
+//test date: please set as current date
+var countDownDate = new Date("Mar 25, 2019 8:00:00").getTime();
+	
+ONOFF.classList.remove('blinking');
+	
+console.log("Count Down Date:");
+console.log(countDownDate);
+	
+var CheckActive = false;
+
 
 // Update the count down every 1 second
 var x = setInterval(function() {
-
+if (!CheckActive) {
   // Get todays date and time
   var now = new Date().getTime();
-
+console.log("actual day");
+console.log(now);
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
-
+console.log("distance");
+console.log(distance);
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -97,13 +116,29 @@ var x = setInterval(function() {
   // Display the result in the element with id="demo"
   document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
-
+	console.log("Countdown Sequence Enabled!!");
+	
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
-  }
+    document.getElementById("countdown").innerHTML = "Expired";
+  } 
+	
+	if ((days == 0) && (hours < 24)) {
+		ONOFF.classList.add('blinking');
+		console.log("Blinking Enabled");
+		console.log(" ")
+		}
+} else {
+	console.log("Override: Countdown Sequence Disabled!!")
+	ONOFF.classList.remove('blinking');
+	 document.getElementById("countdown").innerHTML = "Override: Countdown Sequence Disabled!!";
+	
+}
 }, 1000);
+	
+	
+
 </script> 
 <!-- Services -->
 <section id="services">
@@ -119,7 +154,7 @@ var x = setInterval(function() {
         <h4 class="service-heading"><a class="portfolio-link" data-toggle="modal" href="#awardModal1">Amaze Award 2018-19</a></h4>
         <p class="text-muted">The Award is given to a team that is All Round, Top Notch and has a Well Built Robot</p>
       </div>
-	       <div class="col-md-4"> <span class="fa-stack fa-4x"> <a class="portfolio-link" data-toggle="modal" href="#awardModal4"><img class="rounded-circle img-fluid" src="img/Awards/IMG_20190314_163416267.jpg" alt=""></img></a> </span>
+      <div class="col-md-4"> <span class="fa-stack fa-4x"> <a class="portfolio-link" data-toggle="modal" href="#awardModal4"><img class="rounded-circle img-fluid" src="img/Awards/IMG_20190314_163416267.jpg" alt=""></img></a> </span>
         <h4 class="service-heading"><a class="portfolio-link" data-toggle="modal" href="#awardModal3">Divison Finalists Worlds 2017-18</a></h4>
         <p class="text-muted">This is the highest award presented in the VEX Robotics Competition. The recipient of this award is a team that exemplifies overall excellence in creating a high quality VEX robotics program.</p>
       </div>
@@ -127,7 +162,7 @@ var x = setInterval(function() {
         <h4 class="service-heading"><a class="portfolio-link" data-toggle="modal" href="#awardModal2">Tournament Champion 2017-18</a></h4>
         <p class="text-muted">Overall Competition Winner, Which is Given to the Team that Beats all the other Teams and Wins the Last Finals Match</p>
       </div>
-	<div class="col-md-4"></div>
+      <div class="col-md-4"></div>
       <div class="col-md-4"> <span class="fa-stack fa-4x"> <a class="portfolio-link" data-toggle="modal" href="#awardModal3"><img class="rounded-circle img-fluid" src="img/Awards/IMG_20190314_163458145.jpg" alt=""></img></a> </span>
         <h4 class="service-heading"><a class="portfolio-link" data-toggle="modal" href="#awardModal3">Excellence Award 2017-18</a></h4>
         <p class="text-muted">This is the highest award presented in the VEX Robotics Competition. The recipient of this award is a team that exemplifies overall excellence in creating a high quality VEX robotics program.</p>
@@ -449,20 +484,23 @@ var x = setInterval(function() {
       <div class="col-lg-12 text-center">
         <h2 class="section-heading text-uppercase"><br/>
           Sponsors &amp; Fundraising</h2>
-        <h6 class="text-muted"></h3>
-		</div>
-	  </div>
+        <h6 class="text-muted">
+        </h3>
+      </div>
+    </div>
     <div class="row">
       <div class="col-lg-12 text-center">
-        <p class="text-muted text-body"><strong>Learn how we fund our journey</strong><br/> To continue to be successful, we rely on sponsorship and donations, as well as many hard hours of fundraising. As a homeschool team we receive no school funding, so sponsorship and donations are essential to keep us on top of the competition with the latest and greatest equipment. If you are interested in supporting our team and would like more information, Please contact us <a class="js-scroll-trigger sponsor-scroll" href="#contact">Here</a><br/> 
-			<strong>Sponsorship Includes:</strong><br/>Logos / signage on pit area and team uniform. Team Members will professionally represent the Sponsor and wear appropriate apparel or signage, Use of the Robot at promotional events etc (wherever possible, by arrangement), The robot will represent the Sponsor at all competitions and Promotional material will be distributed to media regarding the team and Sponsor. <br/><strong>Exposure &amp; Media Opportinities:</strong><br/>
-		  Profile and promotional distribution at events, crowd sizes range from 200 to 1,000 plus, Promotional events, Corporate / Sponsors functions. This will give the team a competitive edge and allow them to professionally represent the Sponsor in all situations. 
-		  <br/><strong>Philosophy</strong><br/>
-		  We are looking as a Team to recover only the costs of the competition season and to return as much value as possible to the Sponsor. Our philosophy as a Team is that the investment required is negotiable in order to maximise the opportunity for both parties.
-		  </p>
+        <p class="text-muted text-body"><strong>Learn how we fund our journey</strong><br/>
+          To continue to be successful, we rely on sponsorship and donations, as well as many hard hours of fundraising. As a homeschool team we receive no school funding, so sponsorship and donations are essential to keep us on top of the competition with the latest and greatest equipment. If you are interested in supporting our team and would like more information, Please contact us <a class="js-scroll-trigger sponsor-scroll" href="#contact">Here</a><br/>
+          <strong>Sponsorship Includes:</strong><br/>
+          Logos / signage on pit area and team uniform. Team Members will professionally represent the Sponsor and wear appropriate apparel or signage, Use of the Robot at promotional events etc (wherever possible, by arrangement), The robot will represent the Sponsor at all competitions and Promotional material will be distributed to media regarding the team and Sponsor. <br/>
+          <strong>Exposure &amp; Media Opportinities:</strong><br/>
+          Profile and promotional distribution at events, crowd sizes range from 200 to 1,000 plus, Promotional events, Corporate / Sponsors functions. This will give the team a competitive edge and allow them to professionally represent the Sponsor in all situations. <br/>
+          <strong>Philosophy</strong><br/>
+          We are looking as a Team to recover only the costs of the competition season and to return as much value as possible to the Sponsor. Our philosophy as a Team is that the investment required is negotiable in order to maximise the opportunity for both parties. </p>
         <h3 class="text-muted subheading">How We Fundraise</h3>
-	    <p class="text-muted text-body">Sausage Sizzles, Bake Sales, Car Washes, Odd jobs, Raffles, Skateparties, Parkour with Flow Academy</p>
-	  </div>
+        <p class="text-muted text-body">Sausage Sizzles, Bake Sales, Car Washes, Odd jobs, Raffles, Skateparties, Parkour with Flow Academy</p>
+      </div>
     </div>
     <div class="row">
       <div class="col-md-12 text-center">
