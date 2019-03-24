@@ -79,19 +79,19 @@ h1, h2, h3, h4, h5, h6 {
 <script>
 	let ONOFF = document.querySelector('.blinking');
 
-console.log(ONOFF.classList);
-console.log("© Joseph Greening")
+//console.log(ONOFF.classList);
+//console.log("© Joseph Greening")
 // Set the date we're counting down to
 	document.getElementById("countdown-text").innerHTML = "Count Down to Worlds";
 // Date Counting Down to:	
-//var countDownDate = new Date("Apr 24, 2019 8:00:00").getTime();
+var countDownDate = new Date("Apr 24, 2019 8:00:00").getTime();
 //test date: please set as current date
-var countDownDate = new Date("Mar 25, 2019 8:00:00").getTime();
+//var countDownDate = new Date("Mar 25, 2019 8:00:00").getTime();
 	
 ONOFF.classList.remove('blinking');
 	
-console.log("Count Down Date:");
-console.log(countDownDate);
+//console.log("Count Down Date:");
+//console.log(countDownDate);
 	
 var CheckActive = false;
 
@@ -101,12 +101,12 @@ var x = setInterval(function() {
 if (!CheckActive) {
   // Get todays date and time
   var now = new Date().getTime();
-console.log("actual day");
-console.log(now);
+//console.log("actual day");
+//console.log(now);
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
-console.log("distance");
-console.log(distance);
+//console.log("distance");
+//console.log(distance);
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -126,11 +126,11 @@ console.log(distance);
 	
 	if ((days == 0) && (hours < 24)) {
 		ONOFF.classList.add('blinking');
-		console.log("Blinking Enabled");
-		console.log(" ")
+		//console.log("Blinking Enabled");
+		//console.log(" ")
 		}
 } else {
-	console.log("Override: Countdown Sequence Disabled!!")
+	//console.log("Override: Countdown Sequence Disabled!!")
 	ONOFF.classList.remove('blinking');
 	 document.getElementById("countdown").innerHTML = "Override: Countdown Sequence Disabled!!";
 	
