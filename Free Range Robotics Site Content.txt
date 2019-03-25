@@ -294,6 +294,9 @@ Role: Programmer
 Social Links 1:
 Social Links 2:
 Social Links 3:
+
+(Programmer for ~10 years, mainly in the C# language, new to robotics, with an interest in Mathematics, Physics and Technology.)
+
 Sponsors 
 Sponsor Photo 1:
 
