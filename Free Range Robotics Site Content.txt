@@ -285,6 +285,8 @@ Social Links 1:
 Social Links 2:
 Social Links 3:
 
+I first started robotics in year 8 with the M-Bot platform, with which I programmed the robot to autonomously navigate its’ way through a modular maze. In year 9 I started Vex IQ, the competition that year was Ringmaster, and I built and programmed an omni-directional robot, which placed 2nd in the nationals, as well as 8th in the Asia Pacific competition. This year I joined Free Range Robotics, where I’ve helped with some of the design for our current puncher bot. I am good at problem solving and I enjoy programming and mechanical design.
+
 
 Photo: 
 Title: Christian Witt
