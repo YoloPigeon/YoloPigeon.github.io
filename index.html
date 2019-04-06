@@ -98,7 +98,85 @@ h1, h2, h3, h4, h5, h6 {
       <!--<progress max="100" id="progress-bar"></progress>--> </div>
   </div>
 </div>
-<script>var TestingActive=!1;let ONOFF=document.querySelector(".blinking");ONOFF.classList.remove("blinking");var CheckActive=!1,x=setInterval(function(){if(CheckActive)ONOFF.classList.remove("blinking"),document.getElementById("countdown").innerHTML="Override: Countdown Sequence Disabled!!";else{if(TestingActive){document.getElementById("countdown-text").innerHTML="Testing";var e=new Date("Mar 25, 2019 8:00:00").getTime()}else{document.getElementById("countdown-text").innerHTML="Count Down to Worlds";e=new Date("Apr 24, 2019 8:00:00").getTime()}var n=e-(new Date).getTime(),t=Math.floor(n/864e5),o=Math.floor(n%864e5/36e5),i=Math.floor(n%36e5/6e4),l=Math.floor(n%6e4/1e3);document.getElementById("countdown").innerHTML=t+"d "+o+"h "+i+"m "+l+"s ",console.log("Countdown Sequence Enabled!!"),n<0&&(clearInterval(x),document.getElementById("countdown").innerHTML="Expired"),0==t&&o<24&&ONOFF.classList.add("blinking")}},1e3);</script> <!-- Services -->
+<script>
+	//var cost = 16000
+	//var raised = 8000
+	//var progress = ((raised / cost) * 100);
+	
+	var TestingActive = false;
+	//document.getElementById("funds-text").innerHTML = "Worlds Funds " + progress + "%";
+	//document.getElementById("progress-bar").value = progress;
+	
+	let ONOFF = document.querySelector('.blinking');
+
+//console.log(ONOFF.classList);
+//console.log("© Joseph Greening")
+// Set the date we're counting down to
+	
+ONOFF.classList.remove('blinking');
+	
+//console.log("Count Down Date:");
+//console.log(countDownDate);
+	
+var CheckActive = false;
+
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+if (!CheckActive) {
+	
+		if (TestingActive) {
+		//test date: please set as current date
+		document.getElementById("countdown-text").innerHTML = "Testing";
+var countDownDate = new Date("Mar 25, 2019 8:00:00").getTime();
+	} else {
+		document.getElementById("countdown-text").innerHTML = "Count Down to Worlds";
+// Date Counting Down to:	
+var countDownDate = new Date("Apr 24, 2019 8:00:00").getTime();
+	}
+	
+  // Get todays date and time
+  var now = new Date().getTime();
+//console.log("actual day");
+//console.log(now);
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+//console.log("distance");
+//console.log(distance);
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="countdown"
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+	console.log("Countdown Sequence Enabled!!");
+  // Display Days to go in the About Section
+	document.getElementById("days").innerHTML = days + " days" ;
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Expired";
+  } 
+	
+	if ((days == 0) && (hours < 24)) {
+		ONOFF.classList.add('blinking');
+		//console.log("Blinking Enabled");
+		//console.log(" ")
+		}
+} else {
+	//console.log("Override: Countdown Sequence Disabled!!")
+	ONOFF.classList.remove('blinking');
+	 document.getElementById("countdown").innerHTML = "Override: Countdown Sequence Disabled!!";
+	
+}
+}, 1000);
+	
+	
+
+</script>  <!-- Services -->
 <section id="services">
   <div class="container">
     <div class="row">
@@ -229,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
                 <h4 class="subheading">To Worlds Again</h4>
               </div>
               <div class="timeline-body">
-                <p class="text-muted">This year our Team: LilCap, driven by Ethan Dew Competed at Nationals and Qualified to go to Louisville, Kentucky, USA for the World Championships,</p>
+                <p class="text-muted">This year our Team: LilCap, driven by Ethan Dew Competed at Nationals and Qualified to go to Louisville, Kentucky, USA for the World Championships, the team will be leaving for the States in <span id="days"></span></p>
               </div>
             </div>
           </li>
@@ -245,6 +323,7 @@ h1, h2, h3, h4, h5, h6 {
     </div>
   </div>
 </section>
+
 <!-- Team -->
 <section class="bg-light" id="team">
   <div class="container">
@@ -596,7 +675,7 @@ h1, h2, h3, h4, h5, h6 {
             <div class="modal-body"> <!-- Project Details Go Here -->
               <h2 class="text-uppercase">PlaceHolder</h2>
               <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-              <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/placeholder.png" alt="">
               <ul class="list-inline">
                 <li>Competition: EDR 17/18 </li>
                 <li>Robot Driver: </li>
@@ -623,7 +702,7 @@ h1, h2, h3, h4, h5, h6 {
             <div class="modal-body"> <!-- Project Details Go Here -->
               <h2 class="text-uppercase">PlaceHolder</h2>
               <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-              <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/placeholder.png" alt="">
               <ul class="list-inline">
                 <li>Competition: EDR 16/17</li>
                 <li>Robot Driver: </li>
@@ -650,7 +729,7 @@ h1, h2, h3, h4, h5, h6 {
             <div class="modal-body"> <!-- Project Details Go Here -->
               <h2 class="text-uppercase">PlaceHolder</h2>
               <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-              <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/placeholder.png" alt="">
               <ul class="list-inline">
                 <li>Competition: EDR 16/17 </li>
                 <li>Robot Driver: </li>
