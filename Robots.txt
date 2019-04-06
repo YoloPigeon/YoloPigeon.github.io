@@ -1,10 +1,2 @@
-# Rule 1
-User-agent: *
-Disallow: /*/_notes
-
-# Rule 1
-User-agent: *
-Disallow: /_notes
-
-Sitemap: http://yolopigeon.github.io/sitemap.xml
+Sitemap: http://www.freerangerobotics.org.nz/sitemap.xml
  
