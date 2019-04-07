@@ -226,6 +226,9 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (max-width:1185px) {
+		header.masthead {
+		background-size: contain;
+	}
 	.special-text{
  	color:#F3F3F3;
 	}
@@ -235,6 +238,9 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (max-width:1130px) {
+	header.masthead {
+		background-size: contain;
+	}
 	.special-text{
  	color:#F3F3F3;
 	}
