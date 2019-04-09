@@ -18,8 +18,8 @@ var un = document.myform.username.value;
 var pw = document.myform.pword.value;
 var valid = false;
 
-var unArray = ["flyingnerd123@gmail.com", "etdood@gmail.com", "gabrieljudewheeler@gmail.com"];  // as many as you like - no comma after final entry
-var pwArray = ["joseph", "ethan", "gabriel"];  // the corresponding passwords;
+var unArray = ["flyingnerd123@gmail.com", "etdood@gmail.com", "gabrieljudewheeler@gmail.com", "shauncb22@gmail.com", "cwitt006@gmail.com"];  // as many as you like - no comma after final entry
+var pwArray = ["joseph", "ethan", "gabriel", "shaun", "christian"];  // the corresponding passwords;
 
 for (var i=0; i <unArray.length; i++) {
 if ((un === unArray[i]) && (pw === pwArray[i])) {
